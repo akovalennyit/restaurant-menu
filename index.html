@@ -1,1 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galactic Slice Pizzeria Menu</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #fffdf6;
+            color: #2b2b2b;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        header {
+            background-color: #f44336;
+            color: white;
+            text-align: center;
+            padding: 2rem 1rem;
+        }
+        main {
+            padding: 2rem;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        h1, h2 {
+            text-align: center;
+        }
+        section {
+            margin-bottom: 2rem;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin-bottom: 1.5rem;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 1rem;
+        }
+        .price {
+            float: right;
+            font-weight: bold;
+            color: #f44336;
+        }
+        footer {
+            text-align: center;
+            background-color: #f44336;
+            color: white;
+            padding: 1rem;
+            margin-top: 2rem;
+        }
+        @media (prefers-color-scheme: dark) {
+            body {
+                background-color: #1a1a1a;
+                color: #f4f4f4;
+            }
+            header, footer {
+                background-color: #e53935;
+            }
+            .price {
+                color: #ff7961;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 id="restaurant-name">🌌 Galactic Slice Pizzeria</h1>
+        <p>Your cosmic destination for hand-tossed perfection!</p>
+    </header>
 
+    <main role="main" aria-labelledby="restaurant-name">
+        <section aria-label="Pizza Menu">
+            <h2>Our Stellar Pizzas</h2>
+            <ul>
+                <li>
+                    <h3>1. The Supernova Margherita <span class="price">$11.99</span></h3>
+                    <p>Classic tomato sauce, fresh mozzarella, and basil on a thin crust baked to golden perfection.</p>
+                </li>
+                <li>
+                    <h3>2. Galactic Pepperoni Burst <span class="price">$13.49</span></h3>
+                    <p>Double pepperoni, smoked mozzarella, and a hint of chili oil for an out-of-this-world kick.</p>
+                </li>
+                <li>
+                    <h3>3. Orbiting Veggie Delight <span class="price">$12.99</span></h3>
+                    <p>Loaded with roasted red peppers, spinach, mushrooms, red onions, and black olives.</p>
+                </li>
+                <li>
+                    <h3>4. Cosmic BBQ Chicken <span class="price">$14.49</span></h3>
+                    <p>Grilled chicken, tangy BBQ sauce, caramelized onions, and smoked gouda.</p>
+                </li>
+                <li>
+                    <h3>5. Spicy Meteor Meat Lovers <span class="price">$15.99</span></h3>
+                    <p>Pepperoni, sausage, bacon, and ham drizzled with extra zesty marinara.</p>
+                </li>
+                <li>
+                    <h3>6. Moonlight Truffle Mushroom <span class="price">$14.99</span></h3>
+                    <p>Creamy truffle sauce, portobello mushrooms, arugula, and shaved parmesan.</p>
+                </li>
+                <li>
+                    <h3>7. The Solar Hawaiian <span class="price">$13.99</span></h3>
+                    <p>Sweet pineapple, smoked ham, and mozzarella over a tomato base with a touch of honey.</p>
+                </li>
+                <li>
+                    <h3>8. Comet Caprese <span class="price">$12.49</span></h3>
+                    <p>Cherry tomatoes, fresh basil, mozzarella pearls, and a drizzle of balsamic glaze.</p>
+                </li>
+                <li>
+                    <h3>9. Mars Meatball Madness <span class="price">$14.79</span></h3>
+                    <p>Juicy Italian meatballs, provolone cheese, and red sauce sprinkled with oregano.</p>
+                </li>
+                <li>
+                    <h3>10. Asteroid Four-Cheese <span class="price">$13.99</span></h3>
+                    <p>Blend of mozzarella, cheddar, provolone, and parmesan over garlic cream sauce.</p>
+                </li>
+                <li>
+                    <h3>11. Saturn’s Garden Vegan <span class="price">$13.49</span></h3>
+                    <p>Vegan cheese, spinach, sun-dried tomatoes, zucchini, and basil pesto on a whole-grain crust.</p>
+                </li>
+                <li>
+                    <h3>12. Black Hole Special <span class="price">$16.49</span></h3>
+                    <p>Our chef’s secret combination of spicy sausage, roasted garlic, black olives, and caramelized onions — dangerously good!</p>
+                </li>
+            </ul>
+        </section>
+    </main>
+
+    <footer role="contentinfo">
+        <p>&#169; 2024 Galactic Slice Pizzeria | Accessible Menu built with ❤️ for all pizza lovers</p>
+    </footer>
+</body>
+</html>
