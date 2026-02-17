@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
 :root{
     --bg: #fffdf6;
     --card: #ffffff;
@@ -12,11 +13,9 @@
 html,body{height:100%}
 body{
     margin:0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Inter', sans-serif;
     background:var(--bg);
     color:var(--text);
-    -webkit-font-smoothing:antialiased;
-    -moz-osx-font-smoothing:grayscale;
 }
 
 header{
@@ -35,7 +34,7 @@ section{background:transparent}
 .menu-list{list-style:none;padding:0;margin:0;display:flex;flex-direction:row;flex-wrap:wrap;gap:1rem}
 .menu-list li{display:flex;align-items:flex-start;gap:1rem;padding:1rem;border-radius:12px;background:var(--card);box-shadow:0 6px 18px var(--shadow);border:1px solid rgba(0,0,0,0.03);flex:1 1 calc(50% - 1rem);min-width:260px}
 .menu-list img{width:160px;height:110px;object-fit:cover;border-radius:10px;flex:0 0 160px}
-.menu-list h3{margin:0;font-size:1.05rem;display:flex;align-items:center;justify-content:space-between;gap:1rem}
+.menu-list h3{margin:0;font-size:1.05rem;font-weight:700;display:flex;align-items:center;justify-content:space-between;gap:1rem}
 .menu-list p{margin:.45rem 0 0;color:var(--muted)}
 .price{color:var(--accent);font-weight:700;margin-left:1rem}
 
