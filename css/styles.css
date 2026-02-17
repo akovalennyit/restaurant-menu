@@ -32,9 +32,9 @@ main{max-width:1100px;margin: -2rem auto 3rem;padding:1rem}
 
 section{background:transparent}
 
-.menu-list{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:1rem}
-.menu-list li{display:flex;align-items:flex-start;gap:1rem;padding:1rem;border-radius:12px;background:var(--card);box-shadow:0 6px 18px var(--shadow);border:1px solid rgba(0,0,0,0.03)}
-.menu-list img{width:180px;height:120px;object-fit:cover;border-radius:10px;flex:0 0 180px}
+.menu-list{list-style:none;padding:0;margin:0;display:flex;flex-direction:row;flex-wrap:wrap;gap:1rem}
+.menu-list li{display:flex;align-items:flex-start;gap:1rem;padding:1rem;border-radius:12px;background:var(--card);box-shadow:0 6px 18px var(--shadow);border:1px solid rgba(0,0,0,0.03);flex:1 1 calc(50% - 1rem);min-width:260px}
+.menu-list img{width:160px;height:110px;object-fit:cover;border-radius:10px;flex:0 0 160px}
 .menu-list h3{margin:0;font-size:1.05rem;display:flex;align-items:center;justify-content:space-between;gap:1rem}
 .menu-list p{margin:.45rem 0 0;color:var(--muted)}
 .price{color:var(--accent);font-weight:700;margin-left:1rem}
@@ -47,6 +47,12 @@ section{background:transparent}
     .menu-list li{flex-direction:column}
     .menu-list h3{justify-content:flex-start}
     .price{margin-left:auto}
+}
+
+/* Wider screens: slightly smaller images and two-column layout polish */
+@media (min-width:1000px){
+    .menu-list li{flex:1 1 calc(50% - 1rem)}
+    .menu-list img{width:140px;height:96px;flex:0 0 140px}
 }
 
 footer{background:linear-gradient(135deg,var(--accent-2),var(--accent));color:#fff;text-align:center;padding:1rem;border-radius:8px;max-width:1100px;margin:0 auto}
